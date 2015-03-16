@@ -1,0 +1,44 @@
+html {
+	display: block;
+}
+.wrapper {
+	margin-top: 200px;
+	margin-left: 150px;
+}
+div {
+	display: block;
+}
+#stripes {
+	background-repeat: repeat-x;
+	height: 13px;
+	background-image: url('stripes.png');
+}
+body {
+	background-image: url("background.jpg");
+	background-size: cover;
+	display: block;
+	margin: 8px;
+	font-family: ariel, sans-serif;
+	font-size: 18px;
+	margin-top: 8px;
+	margin-left: 8px;
+	width: 342;
+}
+div.container {
+	margin-top: 0px;
+	margin-left: 0px;
+	padding-bottom: 20px;
+}
+header {
+	padding-bottom: 20px;
+	width: 145px;
+	height:; 44px;
+}
+hr {
+border-color: red;
+width: 35px;
+margin: 0;
+}
+p {
+	color: white;
+}

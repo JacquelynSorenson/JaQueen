@@ -1,0 +1,69 @@
+html {
+	display: block;
+}
+.wrapper {
+	margin: 60px auto 15px;
+	border: 2px dotted #464646;
+	background-color: white;
+	height: 230px;
+	width: 420px;
+	padding: inherit;
+	opacity: 0.75;
+
+}
+div {
+	display: block;
+}
+#nav {
+	float: right;
+	margin-bottom: 3px
+}
+li {
+	display: inline;
+	margin-right: 6px;
+	font-family: 'Permanent Marker';
+	padding: .4em;
+	text-shadow: 2px 2px 10px #111111;
+}
+#logo {
+	height: 100px;
+	background-image: url('Pinch.png');
+	background-size: 280px;
+	background-repeat: no-repeat;
+
+}
+body {
+	background-image: url("doublebackground.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #8C1401;
+	display: block;
+	margin: 5px;
+	margin-top: 3px;
+	margin-left: 5px;
+	width: relative;
+}
+h1 {
+	font-family: 'Permanent Marker', sans-serif;
+	font-size: 27px;
+	padding: 2px;
+	color: #black;
+	text-align: center;
+	line-height: 19px;
+}
+
+p {
+	font-family: 'Alegreya Sans SC', cursive;
+	font-size: 18px;
+	text-align: center;
+	color: black;
+}
+
+header {
+	padding-bottom: 15px;
+	width: 145px;
+	height: 44px;
+}
+hr {
+	width: 50px;
+}
