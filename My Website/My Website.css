@@ -2,17 +2,31 @@ html {
 	display: block;
 }
 .wrapper {
-	margin: 60px auto 15px;
-	border: 2px dotted #464646;
-	background-color: white;
+	margin: inherit;
+	background-color: red;
+	height: 130px;
+	width: 320px;
+	padding: inherit;
+	float: right;
+}
+.info {
+	background-color: purple;
 	height: 230px;
 	width: 420px;
 	padding: inherit;
-	opacity: 0.75;
-
+	float: right;
+}
+.circles {
+	height: 150px;
+	background-image: url('Circle line.png');
+	width: 450px;
+	background-size: fixed;
+	background-repeat: no-repeat;
+	float: right;
 }
 div {
 	display: block;
+	background-color: blue;
 }
 #nav {
 	float: right;
@@ -20,25 +34,26 @@ div {
 }
 li {
 	display: inline;
-	margin-right: 120px;
-	font-family: 'Alegreya Sans SC';
-	padding: .4em;
+	margin-right: 60px;
+	font-family: 'Rock Salt', cursive;
+	font-size: 14px;
+	padding: .3em;
 	color: 73F3D0;
 	text-shadow: 2px 2px 10px #111111;
+	background-color: yellow;
 }
 #logo {
-	height: 100px;
+	height: 50px;
 	background-image: url('wood.jpg');
 	background-size: cover;
-	background-repeat: repeat;
-	padding-top: none; 
+	background-repeat: no-repeat;
 
 }
 body {
 	background-image: url("");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #DBFFF;
+	background-color: #F2F2F2;
 	display: block;
 	margin: 5px;
 	margin-top: 3px;
@@ -46,26 +61,36 @@ body {
 	width: relative;
 }
 h1 {
-	font-family: 'Permanent Marker', sans-serif;
-	font-size: 27px;
+	font-family: 'Merriweather', serif;	
+	font-size: 45px;
 	padding: 2px;
-	color: #black;
-	text-align: center;
-	line-height: 19px;
+	color: #A6A6A6;
+	text-align: left;
+	line-height: 45px;
+	background-color: pink;
 }
+h2 {
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	font-weight: 300;
+	color: #A6A6A6;
 
+}
 p {
-	font-family: 'Alegreya Sans SC', cursive;
+	font-family: 'Merriweather', serif;	
 	font-size: 18px;
-	text-align: center;
+	text-align: left;
 	color: black;
+	background-color: orange;
 }
 
 header {
 	padding-bottom: 15px;
 	width: 145px;
 	height: 44px;
+	background-image: url('wood.jpg');
 }
 hr {
 	width: 50px;
+	background-color: aqua;
 }
