@@ -1,0 +1,93 @@
+.easyrecipe .ERSRHS {
+	float: right;
+	width: 200px;
+	text-align: center;
+	max-width: 38%;
+}
+.easyrecipe div img {
+	box-shadow: 0px 0px 10px 1px #999;
+	border-radius: 4px;
+	padding: 6px;
+}
+.easyrecipe .ERSPhotoFrame {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+div.easyrecipe {
+	font: 13px Arial, Helvetica, sans-serif;
+	border: 2px solid #aaa;
+	padding: 8px;
+	background: #FFF;
+}
+.easyrecipe .ERSName {
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+
+.easyrecipe .ERSRHS .ERSSavePrint a {
+    z-index: 9;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border: 1px solid #ccc;
+	text-align: left;
+	padding: 2px;
+	margin-bottom: 15px;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox .ERSNutritionHead {
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 4px solid #000;
+	text-align: center;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox ul li {
+	list-style-type: none;
+	font-size: 11px;
+	border-bottom: 1px solid #000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+    margin: 0;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox ul {
+	border-bottom: 2px solid #000;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox ul.serves li {
+	border-style: none;
+}
+.easyrecipe .ERSNutritionBox .ERSNutritionInner {
+	border: 3px solid #ccc;
+	padding: 8px;
+}
+.easyrecipe .ERSAuthor {
+	margin-bottom: 12px;
+}
+.easyrecipe .ERSRHS .ERSDetails {
+	text-align: left;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.easyrecipe .ERSSummary {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.easyrecipe .ERSIngredients .ERSIngredientsHeader.ERSHeading {
+	clear: none;
+}
+.easyrecipe .ERSInstructions .ERSInstructionsHeader.ERSHeading {
+	clear: none;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox ul.yield {
+	border-style: none;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox ul {
+		margin: 0px !important;
+}
+.easyrecipe .ERSRHS .ERSNutritionBox .yield li {
+	border-style: none;
+}
+div.easyrecipe div.ERSPhotoFrame img {
+	max-width: 55%;
+}
+

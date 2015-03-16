@@ -1,0 +1,129 @@
+div.easyrecipe {
+	font: 13px Arial, Helvetica, sans-serif;
+	border: 1px dashed #666;
+	color:#666;
+	padding: 10px;
+	background: #FFF;
+}
+.ERComment {
+    margin-bottom: 10px !important;
+}
+.ERComment .ERRateBG {
+    width: 95px;
+    height: 15px;
+    cursor: pointer;
+    float: left;
+    background: url(images/greystar15.png) repeat-x;
+}
+.ERComment .ERRateStars {
+    width: 95px;
+    height: 15px;
+    cursor: pointer;
+    background: url(images/yellowstar15.png) repeat-x;
+}
+.easyrecipe .ERSName {
+	font: 150% Verdana, Geneva, sans-serif;
+	margin-bottom: 15px;
+}
+.easyrecipe .ERSTop {
+    margin-top: 10px;
+    position: relative;
+}
+.easyrecipe .ERSTopRight {
+	overflow: hidden;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.ERSRatingComment {
+    background: url(images/greystar15.png) repeat-x;
+    width: 95px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+.easyrecipe .ERSHeadItems {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.easyrecipe .ERSTimes {
+	border-top: 1px dotted #666;
+	border-bottom: 1px dotted #666;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+.easyrecipe .ERSTimes .ERSTime {
+	/* [disabled]text-align: center; */
+	font-weight: bold;
+}
+.easyrecipe .ERSTimes .ERSTimeItem {
+	/* [disabled]font-size: 10px; */
+	font-weight: normal;
+	float: left;
+}
+.easyrecipe .ERSTimeRight {
+    border-left: 1px solid #ccc;
+}
+.easyrecipe .ERSTopRight img {
+	border: 2px solid #999;
+	width: 300px;
+	height: 225px;
+}
+
+.easyrecipe .ERSSummary {
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+.easyrecipe .divERSHeadItems {
+    margin-bottom: 10px;
+}
+
+.easyrecipe .ERSTimes .ERSTime .ERSTimeHeading {
+	/* [disabled]margin-bottom: 4px; */
+	float: left;
+}
+
+.easyrecipe .ERSSavePrint {
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 15px;
+	padding-right: 10px;
+}
+
+.easyrecipe .ERSTopRight .ERSRHSLabel {
+	width: 84px;
+	float: left;
+	text-align: right;
+	margin-right: 6px;
+}
+.easyrecipe .ERSTopRight .ERSRatings {
+	margin-left: 15px;
+}
+.easyrecipe .ERSTopRight .ERSRHSItem {
+	margin-bottom: 7px;
+	clear: both;
+}
+.easyrecipe .ERSTopRight .ERSRHSItem .ERSRHSValue {
+	overflow: hidden;
+}
+.easyrecipe .ERSTopRight .ERSRHSPrintRating {
+	margin-bottom: 12px;
+	text-align: center;
+}
+.easyrecipe .ERSTopRight .ERSSavePrint .ERSSaveBtn,.easyrecipe .ERSTopRight .ERSSavePrint .ERSPrintBtn  {
+	font-size: 12px;
+}
+.easyrecipe .ERSPhoto {
+	float: left;
+	width: 205px;
+	max-width: 50%;
+}
+.easyrecipe .ERSPhoto img {
+	border: 2px solid #999;
+	padding: 2px;
+}
+

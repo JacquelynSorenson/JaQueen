@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, noarchive">
+    <link href="../css/easyrecipe-guestpost.css" rel="stylesheet" type="text/css">
+    <link href="../css/easyrecipe-guestpost-design.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #apDiv1 {
+            position: absolute;
+            left: 497px;
+            top: 76px;
+            width: 604px;
+            height: 600px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+<div id="apDiv1">
+    <!-- START PAGE -->
+    <div id="easyrecipeUpload">
+        <div id="divERGPUploadContainer">
+            <div id="divERGPUploading">
+                <div id="divERGPFile">&nbsp;xxx</div>
+                <div id="divERGPProgress"></div>
+                <div id="divERGPComplete">
+                    <span id="spnERGComplete">0</span>% complete
+                </div>
+                <div id="divERGPSpinner"></div>
+            </div>
+            <div style="text-align: center; clear: both; margin-top: 140px; font-size: 16px">
+                <input style="z-index: 10010" id="btnERGPSelect" type="button" value="Select File">
+            </div>
+        </div>
+        <div id="divERGPUploaded">
+            <div>
+                <div id="divERGPThumb">
+                    <img id="imgERGPThumb" width="130">
+                </div>
+                <div id="divERGPInfo">
+                    <div></div>
+                    <div id="divERGPFIName">file</div>
+                    <div id="divERGPFIDim">dim</div>
+                    <div id="divERGPFISize">size</div>
+                </div>
+            </div>
+            <div class="ERGPClear">&nbsp;</div>
+            <div id="divERGPDetails">
+                <table>
+                    <tr>
+                        <th scope="row">Title:</th>
+                        <td><input type="text" class="ERGPInput" id="inpERGPTitle"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alt text:</th>
+                        <td><input type="text" class="ERGPInput" id="inpERGPAltText"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Link URL:</th>
+                        <td><input type="text" class="ERGPInput" id="inpERGPLinkURL"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Alignment:</th>
+                        <td class="ERGPAlignment">
+                            <input id="rbERGPAlignNone" type="radio" checked="checked" value="none" name="rbERGPAlign">
+                            <label class="align image-align-none-label" for="rbERGPAlignNone">None</label>
+                            <input id="rbERGPAlignLeft" type="radio" value="left" name="rbERGPAlign">
+                            <label class="align image-align-left-label" for="rbERGPAlignLeft">Left</label>
+                            <input id="rbERGPAlignCenter" type="radio" value="center" name="rbERGPAlign">
+                            <label class="align image-align-center-label" for="rbERGPAlignCenter">Center</label>
+                            <input id="rbERGPAlignRight" type="radio" value="right" name="rbERGPAlign">
+                            <label class="align image-align-right-label" for="rbERGPAlignRight">Right</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Size:</th>
+                        <td class="ERGPSize"><label>
+                            <input type="radio" value="thumbnail" checked name="rbERGPSize">Thumbnail<span style="font-style: italic"></span></label><br>
+                            <label><input type="radio" value="medium" name="rbERGPSize"> Medium<span style="font-style: italic"></span></label><br>
+                            <label><input type="radio" value="large" name="rbERGPSize"> Large<span style="font-style: italic"></span></label><br>
+                            <label><input type="radio" value="full" name="rbERGPSize"> Full size<span style="font-style: italic"></span></label><br>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="clear: both; text-align: center">
+                <input id="btnERGPInsert" type="button" value="Insert into post">
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE -->
+</div>
+</body>
+</html>
+

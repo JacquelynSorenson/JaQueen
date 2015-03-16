@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, noarchive">
+    <link href="../formatcode/format.css" rel="stylesheet" type="text/css" />
+<link href="../formatcode/jquery.miniColors.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	left: 238px;
+	top: 124px;
+	width: 350px;
+	height: 513px;
+	z-index: 1;
+}
+body, td, th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="apDiv1">
+  <!-- START PAGE -->
+  <div class="ERFDialogBox">
+    <div id="ERFTabs">
+      <ul>
+        <li id="liERFDisplayTab"><a href="#ERFDisplayTab">Display Format</a></li>
+        <li id="liERFDisplayStyles"><a href="#ERFDisplayStyles">Display Styles</a></li>
+        <li id="liERFPrint"><a href="#ERFPrint">Print Format</a></li>
+      </ul>
+      <div id="ERFDisplayTab">
+        <div id="ERFAccordion">
+          <!-- START REPEAT SECTIONS -->
+          <h3><a href="#">#section#</a></h3>
+          <div>
+            <div class="ERFMTFont" id="ER_erf_#id#"></div>
+          </div>
+          <!-- END REPEAT SECTIONS -->
+        </div>
+      </div>
+      <div id="ERFDisplayStyles">
+        <div>Styles set the layout, content and basic formatting of your recipe. You can tweak the look and feel of any style using Live Formatting.</div>
+        <div class="ERFDSStyleSelect">
+          <select id="lbERFStyles">
+            <!-- START REPEAT STYLES -->
+            <option value="#directory#" #selected#>#style#</option>
+            <!-- END REPEAT STYLES -->
+          </select>
+          <div><img src="#stylethumb#" width="190" height="220" /></div>
+          <div id="divERFDSButtons">
+            <input id="btnERFTryStyle" type="button" value="Try Style" disabled="disabled"/>
+            &nbsp; &nbsp;
+            <input id="btnERFSaveStyle" type="button" value="Save as default" />
+            <div class="ERFWait" id="divERFWaitStyle">Wait</div>
+          </div>
+        </div>
+      </div>
+      <div id="ERFPrint">Click on the &quot;Print&quot; button in any EasyRecipe. This will open the print page in a
+        new window, but without the Printer box. Click anywhere inside the recipe to open the print formatting options window</div>
+      <div id="ERFButtons">
+        <input id="btnERFReset" type="button" value="Reset to Defaults" />
+        <input id="btnERFUpdate" type="button" value="Update" />
+        <div class="ERFWait" id="divERFWait">Wait</div>
+      </div>
+    </div>
+  </div>
+  <!-- END PAGE -->
+</div>
+</body>
+</html>
+

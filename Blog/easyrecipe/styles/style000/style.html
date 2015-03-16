@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, noarchive">
+
+    <link href="../../easyrecipe.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        body, td, th {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        #apDiv1 {
+            position: absolute;
+            left: 420px;
+            top: 14px;
+            width: 832px;
+            height: 487px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+<div id="apDiv1">
+    <!-- START PAGE -->
+    <div class="easyrecipe" itemscope itemtype="http://schema.org/Recipe">
+        <!-- START INCLUDEIF hasPhoto -->
+        <link itemprop="image" href="#photoURL#"/>
+        <!-- END INCLUDEIF hasPhoto -->
+        <table border="0" class="ERHDTable">
+            <tr>
+                <td><span itemprop="name" class="item ERName">#name#</span></td>
+                <td align="center" valign="top">
+                    <!-- START INCLUDEIF hasRating -->
+
+                    <div class="ERRatingOuter" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <div class="ERRatingInner" style="width: #ratingPC#%"></div>
+                        <div class="review">
+                            <span class="rating"><span class="average" itemprop="ratingValue">#ratingValue#</span> from <span class="count" itemprop="ratingCount">#ratingCount#</span> reviews</span>
+                        </div>
+                    </div>
+                    <!-- END INCLUDEIF hasRating -->
+                </td>
+                <td class="ERHDPrint" valign="top">
+                    <!-- START INCLUDEIF displayPrint --> <a href="#sitePrintURL#/easyrecipe-print/#postID#-#recipeIX#/" rel="nofollow" target="_blank">
+                    <div class="btnERPrint">#lblPrint#</div>
+                </a> <!-- END INCLUDEIF displayPrint -->
+                </td>
+            </tr>
+        </table>
+        <div class="ERClear"></div>
+        <!-- START INCLUDEIF type -->
+        <div class="ERHead">
+            #lblRecipeType#: <span itemprop="recipeCategory">#type#</span>
+        </div>
+        <!-- END INCLUDEIF type -->
+        <!-- START INCLUDEIF cuisine -->
+        <div class="ERHead">
+            #lblCuisine#: <span itemprop="recipeCuisine">#cuisine#</span>
+        </div>
+        <!-- END INCLUDEIF cuisine -->
+        <!-- START INCLUDEIF author -->
+        <div class="ERHead">
+            #lblAuthor#: <span itemprop="author">#author#</span>
+        </div>
+        <!-- END INCLUDEIF author -->
+        <!-- START INCLUDEIF preptime -->
+        <div class="ERHead">
+            #lblPrepTime#:
+            <time itemprop="prepTime" datetime="#preptimeISO#">#preptime#</time>
+        </div>
+        <!-- END INCLUDEIF preptime -->
+        <!-- START INCLUDEIF cooktime -->
+        <div class="ERHead">
+            #lblCookTime#:
+            <time itemprop="cookTime" datetime="#cooktimeISO#">#cooktime#</time>
+        </div>
+        <!-- END INCLUDEIF cooktime -->
+        <!-- START INCLUDEIF totaltime -->
+        <div class="ERHead">
+            #lblTotalTime#:
+            <time itemprop="totalTime" datetime="#totaltimeISO#">#totaltime#</time>
+        </div>
+        <!-- END INCLUDEIF totaltime -->
+        <!-- START INCLUDEIF yield -->
+        <div class="ERHead">
+            #lblServes#: <span itemprop="recipeYield">#yield#</span>
+        </div>
+        <!-- END INCLUDEIF yield -->
+        <!-- START INCLUDEIF summary -->
+        <div itemprop="description" class="ERSummary">#summary#</div>
+        <!-- END INCLUDEIF summary -->
+        <!-- START INCLUDEIF hasIngredients -->
+        <div class="ERIngredients">
+            <div class="ERIngredientsHeader ERHeading">#lblIngredients#</div>
+            <!-- START REPEAT INGREDIENTSECTIONS -->
+            <!-- START INCLUDEIF heading -->
+            <div class="ingredients">
+                <div class="ERSeparator">#heading#</div>
+            </div>
+            <!-- END INCLUDEIF heading -->
+            <ul class="ingredients">
+                <!-- START REPEAT INGREDIENTS -->
+                <!-- START INCLUDEIF isImage -->
+                <li class="ERIngredientImage">#ingredient#</li>
+                <!-- END INCLUDEIF isImage -->
+                <!-- START INCLUDEIF !isImage -->
+                <li class="ingredient" itemprop="ingredients">#ingredient#</li>
+                <!-- END INCLUDEIF !isImage -->
+                <!-- END REPEAT INGREDIENTS -->
+            </ul>
+            <!-- END REPEAT INGREDIENTSECTIONS -->
+        </div>
+        <!-- END INCLUDEIF hasIngredients -->
+        <!-- START INCLUDEIF hasInstructions -->
+        <div class="ERInstructions">
+            <div class="ERInstructionsHeader ERHeading">#lblInstructions#</div>
+            <!-- START REPEAT INSTRUCTIONSTEPS -->
+            <!-- START INCLUDEIF heading -->
+            <div class="instructions">
+                <div class="ERSeparator">#heading#</div>
+            </div>
+            <!-- END INCLUDEIF heading -->
+            <ol class="instructions">
+                <!-- START REPEAT INSTRUCTIONS -->
+                <!-- START INCLUDEIF isImage -->
+                <li class="ERInstructionImage">#instruction#</li>
+                <!-- END INCLUDEIF isImage -->
+                <!-- START INCLUDEIF !isImage -->
+                <li class="instruction" itemprop="recipeInstructions">#instruction#</li>
+                <!-- END INCLUDEIF !isImage -->
+                <!-- END REPEAT INSTRUCTIONS -->
+            </ol>
+            <!-- END REPEAT INSTRUCTIONSTEPS -->
+        </div>
+        <!-- END INCLUDEIF hasInstructions -->
+        <!-- START INCLUDEIF hasNutrition -->
+        <div class="nutrition" itemprop="nutrition" itemscope itemtype="http://schema.org/NutritionInformation">
+            <!-- START INCLUDEIF servingSize -->
+            #lblServeSize#: <span itemprop="servingSize">#servingSize#</span>
+            <!-- END INCLUDEIF servingSize -->
+            <!-- START INCLUDEIF calories -->
+            #lblCalories#: <span itemprop="calories">#calories#</span>
+            <!-- END INCLUDEIF calories -->
+            <!-- START INCLUDEIF fat -->
+            #lblFat#: <span itemprop="fatContent">#fat#</span>
+            <!-- END INCLUDEIF fat -->
+            <!-- START INCLUDEIF saturatedFat -->
+            #lblSatFat#: <span itemprop="saturatedFatContent">#saturatedFat#</span>
+            <!-- END INCLUDEIF saturatedFat -->
+            <!-- START INCLUDEIF unsaturatedFat -->
+            #lblUnsatFat#: <span itemprop="unsaturatedFatContent">#unsaturatedFat#</span>
+            <!-- END INCLUDEIF unsaturatedFat -->
+            <!-- START INCLUDEIF transFat -->
+            #lblTransFat#: <span itemprop="transFatContent">#transFat#</span>
+            <!-- END INCLUDEIF transFat -->
+            <!-- START INCLUDEIF carbohydrates -->
+            #lblCarbs#: <span itemprop="carbohydrateContent">#carbohydrates#</span>
+            <!-- END INCLUDEIF carbohydrates -->
+            <!-- START INCLUDEIF sugar -->
+            #lblSugar#: <span itemprop="sugarContent">#sugar#</span>
+            <!-- END INCLUDEIF sugar -->
+            <!-- START INCLUDEIF sodium -->
+            #lblSodium#: <span itemprop="sodiumContent">#sodium#</span>
+            <!-- END INCLUDEIF sodium -->
+            <!-- START INCLUDEIF fiber -->
+            #lblFiber#: <span itemprop="fiberContent">#fiber#</span>
+            <!-- END INCLUDEIF fiber -->
+            <!-- START INCLUDEIF protein -->
+            #lblProtein#: <span itemprop="proteinContent">#protein#</span>
+            <!-- END INCLUDEIF protein -->
+            <!-- START INCLUDEIF cholesterol -->
+            #lblCholesterol#: <span itemprop="cholesterolContent">#cholesterol#</span>
+            <!-- END INCLUDEIF cholesterol -->
+        </div>
+        <!-- END INCLUDEIF hasNutrition -->
+        <!-- START INCLUDEIF notes -->
+        <div>
+            <div class="ERNotesHeader">#lblNotes#</div>
+            <div class="ERNotes">#notes#</div>
+        </div>
+        <!-- END INCLUDEIF notes -->
+        <!-- START INCLUDEIF hasLinkback -->
+        <div class="ERLinkback">
+            <a class="ERWRPLink" href="http://www.easyrecipeplugin.com/" title="EasyRecipe Wordpress Recipe Plugin" target="_blank">Wordpress Recipe Plugin by <span class="ERAttribution">EasyRecipe</span></a>
+        </div>
+        <!-- END INCLUDEIF hasLinkback -->
+        <div class="endeasyrecipe" title="#style#" style="display: none">#version#</div>
+    </div>
+    <!-- END PAGE -->
+</div>
+</body>
+</html>
+

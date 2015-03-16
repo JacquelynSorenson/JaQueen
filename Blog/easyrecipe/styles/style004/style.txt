@@ -1,0 +1,25 @@
+Style: Provencale
+Version: 1.0
+Author: EasyRecipe
+Description: Basic style with highlighted headings
+Thumbnail: images/thumb.gif
+Fonts: Google(Overlock:700|Syncopate|Fredoka+One|Karla:400,700,400italic|Calligraffitti|Josefin+Sans:400,400italic)
+Formatting: [\
+{"section":"Recipe","target":".easyrecipe","type":"recipe"},\
+{"section":"Recipe Name","target":".easyrecipe .ERSName","type":"font"},\
+{"section":"Print Button","target":".easyrecipe .ERSPrintBtnSpan .ERSPrintBtn","type":"button"},\
+{"section":"Save Button","target":".easyrecipe .ERSSaveBtnSpan .ERSSaveBtn","type":"button"},\
+{"section":"Recipe Details","target":".easyrecipe .ERSDetails","type":"font"},\
+{"section":"Summary","target":".easyrecipe .ERSSummary","type":"font"},\
+{"section":"Ingredients Heading","target":".easyrecipe .ERSIngredients .ERSIngredientsHeader","type":"font"},\
+{"section":"Ingredients Section Headings","target":".easyrecipe .ERSIngredients .ERSSectionHead","type":"font"},\
+{"section":"Ingredients Items","target":".easyrecipe .ERSIngredients .ingredient","type":"list"},\
+{"section":"Instructions Heading","target":".easyrecipe .ERSInstructions .ERSInstructionsHeader","type":"font"},\
+{"section":"Instructions Section Headings","target":".easyrecipe .ERSInstructions .ERSSectionHead","type":"font"},\
+{"section":"Instructions Items","target":".easyrecipe .ERSInstructions .instruction","type":"list"},\
+{"section":"Notes Heading","target":".easyrecipe .ERSNotesHeader","type":"font"},\
+{"section":"Notes","target":".easyrecipe .ERSNotes","type":"font"},\
+{"section":"Nutrition Heading","target":".easyrecipe .ERSNutritionHeader","type":"font"},\
+{"section":"Nutrition","target":".easyrecipe .nutrition","type":"font"}\
+]
+

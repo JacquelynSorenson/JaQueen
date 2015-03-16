@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, noarchive">
+<link href="../css/easyrecipe-entry.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv20 {
+  position: absolute;
+  left: 445px;
+  top: 10px;
+  width: 655px;
+  height: 6426px;
+}
+#divERContainer {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<div id="apDiv20" class="easyrecipeUI">
+  <!-- START PAGE -->
+  <div id="easyrecipeEntry">
+    <div id="divERContainer">
+      <div id="divERBody">
+        <div id="ERDTabs">
+          <ul>
+            <li><a href="#divERDetails">Details</a></li>
+            <li><a href="#divERPhoto">Photo</a></li>
+            <li><a href="#divEROther">Nutrition</a></li>
+            <li><a href="#divERNotes">Notes</a></li>
+            <li><a id="ERDPasteTab" href="#divERPaste">Paste</a></li>
+          </ul>
+          <div id="divEREditBtns">
+            <ul>
+              <li class="ERIconBold" title="Bold"></li>
+              <li class="ERIconItalic" title="Italic"></li>
+              <li class="ERIconUnderline" title="Underline"></li>
+              <li class="ERIconLineBreak" title="Line break"></li>
+              <li class="ERIconLink" title="Insert Link"></li>
+              <li class="ERIconImage" title="Insert Image"></li>
+              <!-- START IGNORE -->
+              <li class="ERIconVideo" title="Insert Video"></li>
+              <!-- END IGNORE -->
+            </ul>
+          </div>
+          <div id="divERDetails">
+            <div class="ERLabel" id="divERName">
+              <label>Recipe Name</label>
+              <input name="inpERName" type="text" class="ERLongInput" id="inpERName" />
+            </div>
+            <div class="ERLabel ERLabelTop" id="divERAuthor">
+              <label>Author</label>
+              <input name="inpERAuthor" type="text" class="ERLongInput" id="inpERAuthor" />
+            </div>
+            <div class="ERLabel ERLabelTop" id="divERType">
+              <label>Recipe Type</label>
+              <input name="inpERType" type="text" id="inpERType" />
+            </div>
+            <div class="ERLabel ERLabelTop" id="divERCuisine">
+              <label>Cuisine</label>
+              <input name="inpERCuisine" type="text" id="inpERCuisine" />
+            </div>
+            <!-- START INCLUDEIF isSelfRated -->
+            <div class="ERLabel ERLabelTop" id="divERRating">
+              <label>Rating</label>
+              <select id="inpERRating">
+                <option value="0">Unrated</option>
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5" selected>5 stars</option>
+              </select>
+            </div>
+            <!-- END INCLUDEIF isSelfRated -->
+            <div class="ERLabel ERLabelSummary" id="lblERSummary">Summary</div>
+            <div id="divERSummary">
+              <textarea name="taERSummary" class="ERTextArea" id="taERSummary"></textarea>
+            </div>
+            <div class="ERLabel" id="lblERIngredients"> Ingredients<br />
+              <span style="font-size: 12px; font-weight: normal;font-style:italic;">One ingredient per line. You don't
+              have to use numbers or use bullets. You can add images, links and recipe headings. <a href="http://www.easyrecipeplugin.com/videos/links-images-formatting" target="_blank">Find out how..</a></span> </div>
+            <div id="divERIngredients">
+              <textarea name="taERIngredients" class="ERTextArea" id="taERIngredients"></textarea>
+            </div>
+            <div class="ERLabel" id="lblERInstructions"> Instructions<br />
+              <span style="font-weight: normal; font-size: 12px; font-style:italic;">Put each instruction on a separate
+              lineYou don't have to use numbers or use bullets. You can add images, links and recipe headings. <a href="http://www.easyrecipeplugin.com/videos/links-images-formatting" target="_blank">Find out how..</a></span> </div>
+            <div id="divERInstructions">
+              <textarea name="taERInstructions" class="ERTextArea" id="taERInstructions"></textarea>
+            </div>
+            <div class="ERLabel" id="divERTimes"> Prep time:
+              <input name="inpERPrepTime" type="text" class="ERTimeInput" id="inpERPrepTime" />
+              &nbsp;&nbsp;&nbsp;Cook time:
+              <input name="inpERCookTime" type="text" class="ERTimeInput" id="inpERCookTime" />
+              &nbsp;&nbsp;Yield:
+              <input name="inpERYield" type="text" class="ERSmallInput" id="inpERYield" />
+              <br />
+              <span
+                                class="ERTinytext">Enter times like: 10 or 10m or 10 mins or 1h 30m or 1 hour 30 mins </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ERTimeError">I can't understand a time you entered</span> </div>
+            <div id="divERBanner"></div>
+          </div>
+          <div class="ERLabel ERNone" id="divERPhoto">
+            <div> Select the photo you want Google Recipe View to show or <span id="lnkERPhotoURL">enter an image URL</span> </div>
+            <div id="divERAddImageURL"> Image URL:
+              <input type="text" id="fldERAPUImageURL" />
+              &nbsp; &nbsp;
+              <input type="submit" id="btnERAIUOK"
+                                value="OK" style="font-size: 65%" />
+              &nbsp;&nbsp;&nbsp;
+              <input type="submit" id="btnERAIUCancel" value="Cancel"
+                                style="font-size: 65%" />
+            </div>
+            <div id="divERPhotos">&nbsp;</div>
+            <div class="ERClear">&nbsp;</div>
+          </div>
+          <div class="ERLabel ERNone" id="divERNotes">
+            <textarea class="ERTextArea" id="taERNotes"></textarea>
+          </div>
+          <div class="ERLabel ERNone" id="divEROther">
+            <div class="EROtherInput"> Serve Size
+              <input name="inpERServeSize" type="text" class="ERSmallInput" id="inpERServeSize" />
+            </div>
+            <div class="EROtherInput"> Calories
+              <input name="inpERCalories" type="text" class="ERSmallInput" id="inpERCalories" />
+            </div>
+            <div class="EROtherInput"> Sugar
+              <input name="inpERSugar" type="text" class="ERSmallInput" id="inpERSugar" />
+            </div>
+            <div class="EROtherInput"> Sodium
+              <input name="inpERSodium" type="text" class="ERSmallInput" id="inpERSodium" />
+            </div>
+            <div class="EROtherInput"> Fat
+              <input name="inpERFat" type="text" class="ERSmallInput" id="inpERFat" />
+            </div>
+            <div class="EROtherInput"> Sat. Fat
+              <input name="inpERSatFat" type="text" class="ERSmallInput" id="inpERSatFat" />
+            </div>
+            <div class="EROtherInput"> Unsat. Fat
+              <input name="inpERUnsatFat" type="text" class="ERSmallInput" id="inpERUnsatFat" />
+            </div>
+            <div class="EROtherInput"> Trans. Fat
+              <input name="inpERTransFat" type="text" class="ERSmallInput" id="inpERTransFat" />
+            </div>
+            <div class="EROtherInput"> Carbs
+              <input name="inpERCarbs" type="text" class="ERSmallInput" id="inpERCarbs" />
+            </div>
+            <div class="EROtherInput"> Fiber
+              <input name="inpERFiber" type="text" class="ERSmallInput" id="inpERFiber" />
+            </div>
+            <div class="EROtherInput"> Protein
+              <input name="inpERProtein" type="text" class="ERSmallInput" id="inpERProtein" />
+            </div>
+            <div class="EROtherInput"> Cholesterol
+              <input name="inpERCholesterol" type="text" class="ERSmallInput" id="inpERCholesterol" />
+            </div>
+            <div class="ERClear"></div>
+          </div>
+          <div id="divERPaste"> Paste a plain text recipe here.<br />
+            There needs to be at least a line with the word "Ingredients" and a line
+            with either "Instructions" or "Method". Anything before "Ingredients" will be used as the Summary.<br />
+            <br />
+            <textarea name="inpERPaste" cols="45" rows="5" class="inpERPaste" id="inpERPaste"></textarea>
+            <div id="divERPasteApply">
+              <input type="submit" name="btnERPaste" id="btnERPaste" value="Convert" />
+            </div>
+          </div>
+          <div id="btnERButtons">
+            <div style="float: left">
+              <input type="submit" name="btnERCancel" id="btnERCancel" value="Cancel" />
+            </div>
+            <div id="divERNext" style="float: right; margin-left: 40px">
+              <input type="submit" name="btnERNext" id="btnERNext" value="Next" />
+            </div>
+            <div id="divERAdd" style="float: right">
+              <input type="submit" name="btnERAdd" id="btnERAdd" value="Add Recipe" />
+            </div>
+            <div style="float: right" id="divERChange">
+              <input type="submit" name="btnERDelete" id="btnERDelete" value="Delete Recipe" />
+              <input type="submit" name="btnERChange" id="btnERChange" value="Update Recipe" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END PAGE -->
+</div>
+</body>
+</html>
+

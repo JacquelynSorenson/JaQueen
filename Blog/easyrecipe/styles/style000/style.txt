@@ -1,0 +1,23 @@
+Style: Legacy
+Version: 1.1
+Author: EasyRecipe
+Description: Mimics the default style of EasyRecipe version 2.x and earlier
+Thumbnail: images/thumb.jpg
+Formatting: [\
+{"section":"Basic Layout","target":".easyrecipe","type":"recipe"},\
+{"section":"Recipe Name","target":".ERName","type":"font"},\
+{"section":"Recipe Details","target":".ERHead","type":"font"},\
+{"section":"Summary","target":".ERSummary","type":"font"},\
+{"section":"Ingredients Heading","target":".ERIngredientsHeader","type":"font"},\
+{"section":"Ingredients List","target":".ingredients","type":"font"},\
+{"section":"Ingredients Items","target":".ingredients .ingredient","type":"list"},\
+{"section":"Ingredients Separators","target":".ingredients .ERSeparator","type":"font"},\
+{"section":"Instructions Heading","target":".ERInstructionsHeader","type":"font"},\
+{"section":"Instructions List","target":".instructions","type":"font"},\
+{"section":"Instructions Items","target":".instructions .instruction","type":"list"},\
+{"section":"Instructions Separators","target":".instructions .ERSeparator","type":"font"},\
+{"section":"Nutrition","target":".nutrition","type":"font"},\
+{"section":"Notes Heading","target":".ERNotesHeader","type":"font"},\
+{"section":"Notes","target":".ERNotes","type":"font"}\
+]
+

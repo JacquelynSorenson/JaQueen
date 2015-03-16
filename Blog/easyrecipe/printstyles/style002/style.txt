@@ -1,0 +1,23 @@
+Style: Tastefully Simple
+Version: 1.1
+Author: EasyRecipe
+Description: Uncomplicated style
+Thumbnail: images/thumb.gif
+Formatting: [\
+{"section":"Recipe","target":"div.easyrecipe","type":"recipe"},\
+{"section":"Recipe Name","target":".easyrecipe .ERSName","type":"font"},\
+{"section":"Times","target":".easyrecipe .ERSTimes","type":"font"},\
+{"section":"Time Item","target":".easyrecipe .ERSTimes .ERSTimeItem","type":"font"},\
+{"section":"Summary","target":".easyrecipe .ERSSummary","type":"font"},\
+{"section":"Ingredients Heading","target":".easyrecipe .ERSIngredientsHeader","type":"font"},\
+{"section":"Ingredients Sections","target":".easyrecipe .ERSIngredients .ERSSectionHead","type":"font"},\
+{"section":"Ingredients Items","target":".easyrecipe .ERSIngredients li.ingredient","type":"list"},\
+{"section":"Instructions Heading","target":".easyrecipe .ERSInstructionsHeader","type":"font"},\
+{"section":"Instructions Sections","target":".easyrecipe .ERSInstructions .ERSSectionHead","type":"font"},\
+{"section":"Instructions Items","target":".easyrecipe .ERSInstructions .instruction","type":"list"},\
+{"section":"Notes Heading","target":".easyrecipe .ERSNotesDiv .ERSNotesHeader","type":"font"},\
+{"section":"Notes","target":".easyrecipe .ERSNotesDiv .ERSNotes","type":"font"},\
+{"section":"Nutrition Heading","target":".easyrecipe .nutrition .ERSNutritionHeader","type":"font"},\
+{"section":"Nutrition Details","target":".easyrecipe .nutrition .ERSNutrionDetails","type":"font"}\
+]
+

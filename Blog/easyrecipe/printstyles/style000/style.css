@@ -1,0 +1,143 @@
+html>body .easyrecipe ul {
+    list-style-position: outside;
+    list-style-type: circle;
+    margin: 10px 0 10px 22px;
+    padding: 0;
+}
+
+body .easyrecipe ul li {
+    background: none repeat scroll 0 0 transparent;
+    list-style-position: inherit;
+    list-style-type: inherit;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+html>body .easyrecipe ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+    margin: 10px 0 10px 30px;
+    padding: 0;
+}
+
+body .easyrecipe ol li {
+    list-style-position: inherit;
+    list-style-type: inherit;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+#divERPContainer {
+    font: 12px Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    position: relative;
+    width: 700px;
+}
+
+#imgERPPhoto {
+    float: right;
+    /* [disabled]height: 200px; */
+    margin-bottom: 20px;
+    top: 14px;
+    width: 200px;
+}
+
+.btnERPrint {
+    display: none;
+}
+
+.easyrecipe {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px dashed #000000;
+    clear: both;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.ERName {
+	font-size: 23px;
+}
+
+.easyrecipe .ERHDTable .ERName .fn {
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+
+.easyrecipe .ERSummary {
+    clear: left;
+    padding-top: 4px;
+}
+
+.ERIngredientsHeader,.ERInstructionsHeader {
+    clear: left;
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#wrap,#footer,#wpadminbar {
+    display: none;
+}
+
+.easyrecipe .ERHDTable {
+    width: auto !important;
+}
+
+.ERPTagline {
+    font-size: 80%;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.ERPBlogname {
+    font-weight: bold;
+}
+
+.ERClear {
+    clear: none;
+}
+
+#ERFPrint {
+    display: none;
+}
+
+.easyrecipe .ingredients .ERSeparator {
+    font-style: italic;
+    font-weight: bold;
+    list-style: none outside none;
+    margin-left: 7px;
+    margin-top: 5px;
+}
+
+.easyrecipe .instructions .ERSeparator {
+    font-style: italic;
+    font-weight: bold;
+    list-style: none outside none;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+.easyrecipe .ERIngredientsHeader,.easyrecipe .ERInstructionsHeader,.easyrecipe .ERNotesHeader {
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.easyrecipe .ERHead {
+    color: #828080;
+    float: left;
+    font: 9px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+}
+

@@ -1,0 +1,172 @@
+div.easyrecipe {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    /* [disabled]font-family: Arial, Helvetica, sans-serif;
+   */
+}
+
+#easyrecipe .ERSSavePrint {
+    float: right;
+}
+
+#easyrecipe .ERSName {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 17px;
+    line-height: 1.3em;
+}
+
+.easyrecipe .ERSHead {
+    float: left;
+    margin-right: 20px;
+}
+
+.easyrecipe .ERSDetails {
+    margin-bottom: 10px;
+}
+
+#easyrecipe div.ERSSummary {
+    font-style: italic;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.easyrecipe .er-top-box {
+    border-bottom: 2px solid #000000;
+}
+
+.easyrecipe .er-half-width {
+    width: 50%;
+}
+
+.easyrecipe .er-float-left {
+    float: left;
+}
+
+#easyrecipe .er-photo-details .er-photo-container {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#easyrecipe p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.2em;
+}
+
+#easyrecipe .er-recipe-details p {
+    font-weight: bold;
+}
+
+.easyrecipe .er-recipe-details p span {
+    font-weight: normal;
+}
+
+.easyrecipe .er-photo-details {
+    background-color: #EFEFEF;
+}
+
+#easyrecipe.easyrecipe .er-photo-container img {
+    border: 0;
+    width: 82%;
+}
+
+#easyrecipe .er-recipe-details {
+    font-size: 0.85em;
+}
+
+#easyrecipe .ERSIngredients .ERSIngredientsHeader, #easyrecipe .ERSInstructions .ERSInstructionsHeader, #easyrecipe div .ERSNotesHeader, #easyrecipe .nutrition .ERSNutritionHeader {
+    font-size: 1.25em;
+    font-weight: bold;
+    clear: both;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+#easyrecipe ul, #easyrecipe ol {
+    margin: 0;
+    line-height: inherit;
+}
+
+#easyrecipe .ERSIngredients .ERSSectionHead {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-weight: bold;
+    padding-left: 2.4em;
+}
+
+#easyrecipe .ERSInstructions .ERSSectionHead {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-weight: bold;
+    padding-left: 2.4em;
+}
+
+#easyrecipe.easyrecipe .ERSIngredients li.ingredient {
+    list-style: disc inside;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    background: 0;
+}
+
+#easyrecipe .ERSIngredients li.ERSIngredientImage {
+    list-style-type: none;
+    margin: 0;
+}
+
+#easyrecipe ol, #easyrecipe ul {
+    padding: 0 0 0 2.4em;
+}
+
+#easyrecipe .ERSIngredients {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#easyrecipe .ERSInstructions {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#easyrecipe .ERSNotesDiv {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+#easyrecipe .er-ratings-block {
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+
+#easyrecipe .er-ratings-outer {
+    display: inline-block;
+    background: url(images/greystar14.png) repeat-x;
+    text-align: left;
+    width: 70px;
+    height: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#easyrecipe .er-ratings-inner {
+    display: inline-block;
+    background: url(images/yellowstar14.png) repeat-x;
+    height: 14px;
+}
+
+#easyrecipe .er-ratings-review {
+    display: inline-block;
+    font: 9px Tahoma, Arial, sans-serif;
+}
+

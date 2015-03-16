@@ -1,0 +1,759 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="robots" content="noindex, noarchive">
+    <style type="text/css">
+        #apDiv1 {
+            position: absolute;
+            left: 310px;
+            top: 21px;
+            width: 1146px;
+            height: 571px;
+            z-index: 1;
+        }
+    </style>
+    <style type="text/css">
+        body, td, th {
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        .form-table td {
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 9px;
+            padding: 8px 10px;
+        }
+
+        #apDiv2 {
+            position: absolute;
+            left: 456px;
+            top: 12px;
+            width: 951px;
+            height: 442px;
+            z-index: 1;
+        }
+    </style>
+    <link href="../css/easyrecipe-settings.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/easyrecipe-design.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="apDiv2">
+<!-- START PAGE -->
+
+<div id="divERSHeader">
+    <div class="ERSHdr1"> EasyRecipe #erplus# Settings</div>
+    <div class="ERSHdr2"> Before using EasyRecipe, enter your preferred settings so your recipes will be displayed exactly as YOU want them.<br/>
+        Once you get it just right, you'll never have to visit this section again. But you can make changes at any time of course.<br/>
+        You can also adjust colors, spacing, borders and list styles in EasyRecipe's <a href="http://www.easyrecipeplugin.com/support/live-formatting/" target="_blank">Live Formatting</a></div>
+</div>
+<div id="easyrecipeUI" class="easyrecipeUI">
+<form id="frmERSForm" method="post" action="" name="frmERSForm">
+<input type="hidden" name="action" value="save"/>
+
+<div id="divERSTabs">
+<ul>
+    <li><a href="#divERSGeneral"><span class="xlate">General</span></a></li>
+    <li><a href="#divERSLabels"><span class="xlate">Labels</span></a></li>
+    <li><a href="#divERSStyles"><span class="xlate">Display Styles</span></a></li>
+    <li><a href="#divERSPrintStyles"><span class="xlate">Print Styles</span></a></li>
+    <li><a href="#divERSFooderific" class="ERSNoSave"><span class="xlate">Fooderific</span></a></li>
+    <li><a href="#divERSGuestPosts"><span class="xlate">Guest Posts</span></a></li>
+    <li><a href="#divERSImport" class="ERSNoSave"><span class="xlate">Import</span></a></li>
+    <li><a href="#divERSSupport" class="ERSNoSave"><span class="xlate">Support</span></a></li>
+    <li><a href="#divERSGeeks"><span class="xlate">Geeky Stuff</span></a></li>
+</ul>
+<div id="divERSGeneral">
+    <table style="width:95%;margin-left:auto;margin-right:auto; border-collapse:collapse">
+        <!-- START INCLUDEIF isPlus -->
+        <tr>
+            <td colspan="2"><span style="display:inline-block;width:90px" class="ERSLabel xlate">License Key:</span>
+                <input class="ERSTextField" type="text" name="#settingsname#[licenseKey]" value="#licenseKey#"/>
+                <span class="ERSExplain xlate">Enter your license key to enable automatic updates and priority support</span></td>
+        </tr>
+        <!-- END INCLUDEIF isPlus -->
+        <tr>
+            <td colspan="2"><span style="display:inline-block;width:90px" class="ERSLabel xlate">Default Author:</span>
+                <input class="ERSTextField" type="text" name="#settingsname#[author]" value="#author#"/>
+                    <span class="ERSExplain xlate">This is the name you'll normally use
+                    as the Author of your recipes</span></td>
+        </tr>
+        <tr>
+            <td style="width:50%; vertical-align:text-top"><span class="ERSLabel xlate">Default Cuisines:</span><br/>
+                <span class="ERSExplain xlate">What cuisines will you most likely use?</span><br/>
+                <textarea id="ERDefaultCuisines" name="#settingsname#[cuisines]">#cuisines#</textarea></td>
+            <td style="width:50%;vertical-align:top"><span class="ERSLabel xlate">Default Meal Types:</span><br/>
+                <span class="ERSExplain xlate">What meal types will you most likely use?</span><br/>
+                <textarea id="ERDefaultTypes" name="#settingsname#[recipeTypes]">#recipeTypes#</textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <table style="border-spacing:0 10px;width:100%">
+                    <!-- START IGNORE -->
+                    <tr>
+                        <th scope="row"><span class="xlate">Use the post featured image for snippet</span><br/>
+                            <span class="ERSExplain xlate">Use the post's featured as the snippet image</span></th>
+                        <td style="width:37%"><input type="checkbox" name="#settingsname#[useFeaturedImage]" #useFeaturedImageChecked# /></td>
+                    </tr>
+                    <!-- END IGNORE -->
+                    <tr>
+                        <th scope="row"><span class="xlate">Automagically convert fractions</span><br/>
+                            <span class="ERSExplain xlate">e.g. Convert 1/2 to &frac12;</span></th>
+                        <td style="width:37%"><input type="checkbox" name="#settingsname#[convertFractions]" #convertFractionsChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display a &quot;Print&quot; button</span><br/>
+                            <span class="ERSExplain xlate">Allows readers to print your recipes</span></th>
+                        <td><input type="checkbox" name="#settingsname#[displayPrint]" #displayPrintChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Remove broken microformatting</span><br/>
+                            <a href="http://www.easyrecipeplugin.com/badmicroformats.php" target="_blank"><span class="ERSExplain xlate">What is broken microformatting?</span></a></th>
+                        <td><input type="checkbox" name="#settingsname#[removeMicroformat]" #removeMFChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Enable <span class="ERSSwoopOrange">Swoop</span></span><br/>
+                            <span class="ERSExplain xlate"><a href="http://swoop.com/publishers/" target="_blank">What is Swoop</a></span>?
+                        </th>
+                        <td><input name="#settingsname#[enableSwoop]" type="checkbox" id="cbERSEnableSwoop" #enableSwoopChecked# />
+                            <div id="divERSSwoopSettings" class="#swoopclass#"><span class="xlate">Your <span class="ERSSwoopOrange">Swoop</span> Site ID</span><br/>
+                                <input name="#settingsname#[swoopSiteID]" type="text" value="#swoopSiteID#"/>
+
+                                <div id="divERSRegisterSwoop" class="#registerswoop#"><span class="xlate">No ID?</span> <a href="https://portal.swoop.com/enter?channel_id=easy_recipe&#swoopqs#" target="_blank"><span class="xlate">Register here</span></a>
+                                </div>
+                                <div id="divERSLoginSwoop" class="#loginswoop#"><a href="https://portal.swoop.com/enter?channel_id=easy_recipe&site_id=#swoopSiteID#" target="_blank">Login to Swoop</a></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Ratings</span><br/>
+                            <span class="ERSExplain xlate">Which ratings system would you like to use?</span></th>
+                        <td><label>
+                            <input name="#settingsname#[ratings]" type="radio" value="EasyRecipe" #ratingEasyRecipeChecked# />
+                            EasyRecipe</label>
+                            <br/>
+                            <label>
+                                <input name="#settingsname#[ratings]" type="radio" value="SelfRated" #ratingSelfRatedChecked# />
+                                Self Rated
+                            </label>
+                            <br/>
+                            <label>
+                                <input name="#settingsname#[ratings]" type="radio" value="Disabled" #ratingDisabledChecked# />
+                                Disable</label></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Filter excerpts</span><br/>
+                          <span class="ERSExplain xlate">Remove non-text from recipe in excerpts<br/>
+                        (e.g. Print button)</span></th>
+                        <td style="width:37%"><input type="checkbox" name="#settingsname#[filterExcerpts]" #filterExcerptsChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display Ziplist recipes</span><br/>
+                            <span class="ERSExplain xlate">Allow EasyRecipe to format and display Ziplist recipes</span></th>
+                        <td style="width:37%"><input id="cbDisplayZiplist" type="checkbox" name="#settingsname#[displayZiplist]" #displayZiplistChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display Recipe&nbsp;Card recipes</span><br/>
+                            <span class="ERSExplain xlate">Allow EasyRecipe to format and display Recipe&nbsp;Card recipes</span></th>
+                        <td style="width:37%"><input id="cbDisplayRecipeCard" type="checkbox" name="#settingsname#[displayRecipeCard]" #displayRecipeCardChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display Recipage recipes</span><br/>
+                            <span class="ERSExplain xlate">Allow EasyRecipe to format and display Recipepage recipes</span></th>
+                        <td style="width:37%"><input id="cbDisplayRecipage" type="checkbox" name="#settingsname#[displayRecipage]" #displayRecipageChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display Get&nbsp;Me&nbsp;Cooking recipes</span><br/>
+                            <span class="ERSExplain xlate">Allow EasyRecipe to format and display Get&nbsp;Me&nbsp;Cooking recipes</span></th>
+                        <td style="width:37%"><input id="cbDisplayGMC" type="checkbox" name="#settingsname#[displayGMC]" #displayGMCChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display Ultimate&nbsp;Recipe recipes</span><br/>
+                            <span class="ERSExplain xlate">Allow EasyRecipe to format and display Ultimate&nbsp;Recipe recipes</span></th>
+                        <td style="width:37%"><input id="cbDisplayUltimateRecipe" type="checkbox" name="#settingsname#[displayUltimateRecipe]" #displayUltimateRecipeChecked# /></td>
+                    </tr>
+
+                </table>
+            </td>
+            <td>
+                <table style="border-spacing:0 10px;width:100%">
+                    <tr>
+                        <th scope="row"><span class="xlate">List at <a href="http://www.fooderific.com" target="_blank">Fooderific.com</a></span><br/>
+                            <span class="ERSExplain xlate">Get more traffic to your blog!</span></th>
+                        <td><input id="inpFDEnable" type="checkbox" name="#settingsname#[enableFooderific]" #fdLinkChecked# /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Display Save button</span><br/>
+                            <span class="ERSExplain xlate">Allows readers to save your recipes</span></th>
+                        <td class="ERSSaveButtons"><label>
+                            <input type="radio" name="#settingsname#[saveButton]" value="None" #saveButtonNoneChecked# />
+                            None</label>
+                            <!-- START INCLUDEIF showZiplist -->
+                            <br/>
+                            <label>
+                                <input type="radio" name="#settingsname#[saveButton]" value="Ziplist" #saveButtonZiplistChecked# />
+                                Ziplist</label>
+                            <div class="ERSPartnerKey #ziplistclass#" id="divERSZiplistSettings">Your Ziplist partner key<br/>
+                                <input name="#settingsname#[ziplistPartnerKey]" type="text" value="#ziplistPartnerKey#"/>
+
+                                <div id="divERSZiplistLink" class="ERSDisplayNone"><a href="http://www.ziplist.com/partner_signup" target="_blank">Get a Ziplist partner key</a></div>
+                            </div>
+                            <!-- END INCLUDEIF showZiplist -->
+                            <br/>
+                            <label>
+                                <input type="radio" name="#settingsname#[saveButton]" value="BigOven" #saveButtonBigOvenChecked# />
+                                BigOven</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th width="53%" scope="row"><span class="xlate">Subscribe to our mailing list</span></th>
+                        <td width="47%"><input name="#settingsname#[erSubscribe]" type="checkbox" id="cbERSSubscribe" #erSubscribeChecked# /></td>
+                    </tr>
+                    <tr id="trERSSubscribe" class="#subscribeclass#">
+                        <td colspan="2">
+                            <table class="ERSSubscribe">
+                                <tr>
+                                    <td class="ERSSubscribeLabel" width="53%"><span class="xlate">Your first name:</span></td>
+                                    <td width="47%"><input name="#settingsname#[erFirstName]" type="text" value="#erFirstName#"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="ERSSubscribeLabel"><span class="xlate">Your email address:</span></td>
+                                    <td><input name="#settingsname#[erEmailAddress]" type="text" value="#erEmailAddress#"/></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate">Support EasyRecipe</span><br/>
+                            <span class="ERSExplain xlate">Display a teensy link back to EasyRecipe</span></th>
+                        <td><input type="checkbox" name="#settingsname#[allowLink]" #allowLinkChecked# /></td>
+                    </tr>
+                    <tr>
+                        <td><span class="ERSExplain xlate">Please show us some social media love so we can keep growing</span></td>
+                        <td><a href="https://www.facebook.com/EasyRecipePlugin" target="_blank" title="Like us on Facebook"><span class="ERSSocialButton ERSFacebook">&nbsp;</span></a>
+                            <a href="https://twitter.com/easyrecipeWP" target="_blank" title="Follow us on Twitter"><span class="ERSSocialButton ERSTwitter">&nbsp;</span></a>
+                            <a href="http://wordpress.org/extend/plugins/easyrecipe/" target="_blank" title="Give us 5 on Wordpress!"><span class="ERSSocialButton ERSWordpress">&nbsp;</span></a>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="divERSLabels">
+    <div class="ERSCustomHdr ERSHdrExplain"><span class="xlate">Custom labels allow you to change the way EasyRecipe displays field names</span>.<br/>
+        <span class="xlate">For example, you might want your recipes to show &quot;Method&quot; instead of &quot;Instructions&quot;</span></div>
+    <table id="tblERSLabels">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Author</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblAuthor]" value="#lblAuthor#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Ingredients</em> heading</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblIngredients]" value="#lblIngredients#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Instructions</em> heading</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblInstructions]" value="#lblInstructions#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Notes</em> heading</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblNotes]" value="#lblNotes#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Nutrition</em> heading</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblNutrition]" value="#lblNutrition#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Cuisine</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblCuisine]" value="#lblCuisine#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Recipe type</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblRecipeType]" value="#lblRecipeType#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Prep time</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblPrepTime]" value="#lblPrepTime#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Cook time</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblCookTime]" value="#lblCookTime#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Total time</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblTotalTime]" value="#lblTotalTime#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Yield</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblServes]" value="#lblServes#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Serve size</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblServeSize]" value="#lblServeSize#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Calories</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblCalories]" value="#lblCalories#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Sugar</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblSugar]" value="#lblSugar#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Sodium</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblSodium]" value="#lblSodium#"/></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Fat</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblFat]" value="#lblFat#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Saturated fat</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblSatFat]" value="#lblSatFat#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><em>Unsaturated fat</em> label</th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblUnsatFat]" value="#lblUnsatFat#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Trans Fat</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblTransFat]" value="#lblTransFat#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Carbs</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblCarbs]" value="#lblCarbs#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Fiber</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblFiber]" value="#lblFiber#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Protein</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblProtein]" value="#lblProtein#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Cholesterol</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblCholesterol]" value="#lblCholesterol#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Rate recipe</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblRateRecipe]" value="#lblRateRecipe#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Print</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblPrint]" value="#lblPrint#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Save</em> label</span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblSave]" value="#lblSave#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Hour</em></span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblHour]" value="#lblHour#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Hours</em></span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblHours]" value="#lblHours#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Minute</em></span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblMinute]" value="#lblMinute#"/></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><span class="xlate"><em>Minutes</em></span></th>
+                        <td><input class="ERSTextField" type="text" name="#settingsname#[lblMinutes]" value="#lblMinutes#"/></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="divERSStyles">
+    <div class="divERSStyleHdr ERSHdrExplain"> <span class="xlate">The display style you select sets the basic layout and content of your recipes when they're displayed.<br/>
+                You can customize your style even further by using <a href="http://www.easyrecipeplugin.com/support/live-formatting/" target="_blank">Live Formatting</a></span></div>
+    <input class="ERSSelectedStyle" type="hidden" name="#settingsname#[style]" value="#styleDirectory#"/>
+
+    <div id="divERSStyleTabs" class="ERSStyleTabs">
+        <ul>
+            <!-- START REPEAT STYLETABS -->
+
+            <li><a href="#divERSStyle-tab#styleTab#">#styleTab#</a></li>
+            <!-- END REPEAT STYLETABS -->
+        </ul>
+        <!-- START REPEAT STYLETABS -->
+
+        <div id="divERSStyle-tab#styleTab#">
+            <!-- START REPEAT STYLES -->
+
+            <div class="ERSStyle #selected#">
+                <input type="hidden" value="#directory#"/>
+
+                <div class="ERSStyleName"> #style#</div>
+                <img src="#thumbnail#" width="150" height="200"/>
+
+                <div class="ERSStyleDesc"> #description#</div>
+            </div>
+            <!-- END REPEAT STYLES -->
+
+            <div class="clearer"> &nbsp; </div>
+        </div>
+        <!-- END REPEAT STYLETABS -->
+    </div>
+</div>
+<div id="divERSPrintStyles">
+    <div class="divERSStyleHdr ERSHdrExplain"> <span class="xlate">The print style you select sets the basic layout and content of your recipes when they're printed.<br/>
+                You can customize your style even further by using <a href="http://www.easyrecipeplugin.com/support/live-formatting/" target="_blank">Live Formatting</a></span></div>
+    <input class="ERSSelectedPrintStyle" type="hidden" name="#settingsname#[printStyle]" value="#printStyleDirectory#"/>
+
+    <div id="divERSPrintStyleTabs" class="ERSStyleTabs">
+        <ul>
+            <!-- START REPEAT PRINTSTYLETABS -->
+
+            <li><a href="#divERSPrintStyle-tab#styleTab#">#styleTab#</a></li>
+            <!-- END REPEAT PRINTSTYLETABS -->
+        </ul>
+        <!-- START REPEAT PRINTSTYLETABS -->
+
+        <div id="divERSPrintStyle-tab#styleTab#">
+            <!-- START REPEAT PRINTSTYLES -->
+
+            <div class="ERSStyle #selected#">
+                <input type="hidden" value="#directory#"/>
+
+                <div class="ERSStyleName"> #style#</div>
+                <img src="#thumbnail#" width="150" height="200"/>
+
+                <div class="ERSStyleDesc"> #description#</div>
+            </div>
+            <!-- END REPEAT PRINTSTYLES -->
+
+            <div class="clearer"> &nbsp; </div>
+        </div>
+        <!-- END REPEAT PRINTSTYLETABS -->
+    </div>
+</div>
+<div id="divERSFooderific">
+    <!-- START INCLUDEIF fdNotEnabled -->
+    <div id="divFDFirstRun">
+        <div id="divFDThanks">Want more traffic to your blog?</div>
+        <div>
+            <p><a href="http://www.fooderific.com" target="_blank">Fooderific.com</a> is a food photo gallery created by the folks who brought you EasyRecipe.</p>
+
+            <p>It showcases food photos and recipe snippets from food bloggers around the world</p>
+
+            <p>It only shows basic recipe details so readers have to visit your blog to read the recipe.</p>
+
+            <p>End result? You'll get more traffic!</p>
+
+            <p>What's better is that it's all automatic. There's no manual submission required like Foodgawker or Tastespotting.</p>
+
+            <p>Your posts are submitted automatically and will appear on Fooderific within a minutes of being published.</p>
+
+            <div class="ERSDivCenter"><a href="" id="btnFDStartScan">Enable Fooderific</a></div>
+        </div>
+    </div>
+    <!-- END INCLUDEIF fdNotEnabled -->
+    <!-- START INCLUDEIF fdFirstRun -->
+    <div id="divFDFirstRun">
+        <div id="divFDThanks">Fooderific is enabled! There's just one more step.</div>
+        <div>
+            <p>Fooderific needs to run a site scan so it can find and include all your current recipe posts.</p>
+
+            <p>Once it's completed, EasyRecipe will automatically update Fooderific whenever you add or change a post.</p>
+
+            <p> The whole process is automatic and runs in the background so it won't affect your site performance.</p>
+
+            <div class="ERSDivCenter"><a href="" id="btnFDStartScan">Start Site Scan</a></div>
+        </div>
+    </div>
+    <!-- END INCLUDEIF fdFirstRun -->
+    <div id="divFDScanScheduled">
+        <div class="divERSGreat">Great!</div>
+        <p>A background site scan has been scheduled and will start in just a few seconds.</p>
+
+        <p>This tells Fooderific about all your current posts. Once completed, EasyRecipe will keep Fooderific updated automatically.</p>
+
+        <p>The scan usually only takes a minute or two to complete, but it may take Fooderific anywhere from a few minutes to several hours to list all your current posts. It depends on how many posts you have and how many other sites have posts
+            waiting to be listed.</p>
+
+        <p>Everything happens in the background so you don't need to hang about on this page.</p>
+
+        <p>Although it can take quite a while for all your posts to be listed, the first posts should start appearing on Fooderific in just a few minutes.</p>
+
+        <div class="ERSDivCenter"><a id="btnFDContinue" href="">Continue</a></div>
+    </div>
+    <div id="divFDRetrieving" class="#retrieveclass#">
+        <div>Retrieving Your Site's Fooderific Status</div>
+        <div id="divFDSpinner">&nbsp;</div>
+    </div>
+    <div id="divFDStatus">
+        <div>
+            <div id="divFDYourStatus">Your Site's Fooderific Status</div>
+            <table border="0">
+                <tr>
+                    <th scope="row">Fooderific sees your site as:</th>
+                    <td id="tdFDSITESTATUS">&nbsp;</td>
+                </tr>
+                <!-- START IGNORE -->
+                <tr>
+                    <th scope="row">Last updated</th>
+                    <td id="tdFDLASTUPDATED">&nbsp;</td>
+                </tr>
+                <!-- END IGNORE -->
+                <tr>
+                    <th scope="row">Last full site scan &nbsp; (<span id="spnFDRescan">Re-scan</span>)</th>
+                    <td><span id="spnFDLASTSCAN">&nbsp;</span></td>
+                </tr>
+                <tr>
+                    <th scope="row">Posts found</th>
+                    <td id="tdFDTOTAL">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Recipes displayed</th>
+                    <td id="tdFDVISIBLE">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Recipes not displayed - no photo</th>
+                    <td id="tdFDNOIMAGE">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Recipes not displayed - photo too small</th>
+                    <td id="tdFDSMALLIMAGE">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Recipes not displayed - other</th>
+                    <td id="tdFDOTHER">&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">Waiting in queue</th>
+                    <td id="tdFDQUEUED">&nbsp;</td>
+                </tr>
+            </table>
+            <div class="ERSDivCenter"><a href="http://www.fooderific.com/recipes/#fdsite#" target="_blank">View Your Gallery on Fooderific</a></div>
+            <div class="ERSDivCenter"><a href="http://www.fooderific.com/buttons.php?s=#fdsite#" target="_blank">Link to Your Gallery on Fooderific</a></div>
+            <div id="divFDDisable">Disable Fooderific</div>
+        </div>
+    </div>
+</div>
+<div id="divERSGuestPosts">
+    <div class="ERSHdrExplain"><span class="xlate">EasyRecipe allows vistors to post recipes</span><br/>
+        <span class="xlate">Guest posters don't have to register or login</span>. <a href="http://www.easyrecipeplugin.com/guest-posts.php" target="_blank">Learn more...</a></div>
+    <div>
+        <!-- START INCLUDEIF isPlus -->
+        #guestpostsettings#
+        <!-- END INCLUDEIF isPlus -->
+        <!-- START INCLUDEIF !isPlus -->
+        <div class="ERSPlusFeature">
+            <div><strong>This feature is available in</strong></div>
+            <div><a href="http://www.easyrecipeplugin.com/" target="_blank"><img src="#easyrecipeURL#/images/easyrecipeplus.png" width="314" height="43" border="0"/></a></div>
+            <div><a href="http://www.easyrecipeplugin.com/" target="_blank">Click here</a> to find out how to get this feature<br/>
+                and all the other Plus goodies <em>for only $24.95!</em></div>
+        </div>
+        <!-- END INCLUDEIF !isPlus -->
+    </div>
+</div>
+<div id="divERSImport">
+    <div class="ERSHdrExplain">EasyRecipe can import recipes in bulk if we recognise the input format.<br/>
+        <span class="xlate">If you have data in a format we don't currently recognise, let us know and we'll see if we can implement it.</span>.
+    </div>
+    <div id="divERSImportSettings">
+        <div id="divERSImportFormats">
+            <label>
+                <input type="radio" name="rbERSImportSource" value="paprika"/>
+                Paprika - single recipe <em>(.paprikarecipe)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="paprikas"/>
+                Paprika - multiple recipes <em>(.paprikarecipes)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="cookn"/>
+                Cook'n v10 <em>(.html)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="macgourmet"/>
+                MacGourmet 3<em>(.mgourmet3)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="macgourmet"/>
+                MacGourmet 4<em>(.mgourmet4)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="yummysoup"/>
+                Yummy Soup <em>(.xml)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="mastercook"/>
+                MasterCook <em>(.mx2)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="mastercookmxp"/>
+                MasterCook <em>(.mxp)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="mealmaster"/>
+                Meal-Master <em>(.mmf)</em></label>
+            <br/>
+            <label>
+                <input type="radio" name="rbERSImportSource" value="cookbookwiz"/>
+                Cookbook Wizard for Windows <em>(.txt)</em></label>
+            <br/>
+        </div>
+    </div>
+    <!-- START INCLUDEIF !isPlus -->
+    <div class="ERSPlusFeature">
+        <div><strong>This feature is available in</strong></div>
+        <div><a href="http://www.easyrecipeplugin.com/" target="_blank"><img src="#easyrecipeURL#/images/easyrecipeplus.png" width="314" height="43" border="0"/></a></div>
+        <div><a href="http://www.easyrecipeplugin.com/" target="_blank">Click here</a> to find out how to get this feature<br/>
+            and all the other Plus goodies <em>for only $24.95!</em></div>
+    </div>
+    <!-- END INCLUDEIF !isPlus -->
+    <!-- START INCLUDEIF isPlus -->
+    <div id="divERSImportUploader"></div>
+    <div id="divERSImportConfirm">
+        <div id="divERSImportFound"><span id="spnERSnImportRecipes">x</span> recipes found in <span id="spnERSnImportFiles">y</span> files</div>
+        <div id="divERSImportButtons">
+            <input id="btnERSImportCancel" type="button" value="Cancel"/>
+            &nbsp; &nbsp; &nbsp;
+            <input id="btnERSImportCreate" type="button" value="Create Posts"/>
+        </div>
+    </div>
+    <div id="divERSImportCreating">
+        <div class="xlate">Creating Posts</div>
+        <div id="divERSImportCreateSpinner">&nbsp;</div>
+    </div>
+    <!-- END INCLUDEIF isPlus -->
+</div>
+<div id="divERSSupport">
+    <div class="ERSHdrExplain">If EasyRecipe isn't working for you, or not working as you expect, we're keen to help.<br/>
+        <span class="xlate">Please be as specific as you can when describing your problem</span>.
+    </div>
+    <table>
+        <tr>
+            <th scope="row">EasyRecipe <span class="xlate">Version:</span></th>
+            <td id="divERSVersionCheck">&nbsp; <span style="font-weight:bold">#pluginversion#</span> &nbsp; &nbsp;<span id="spnERSLatestVersion" class="xlate">Checking for updates...</span></td>
+        </tr>
+        <tr>
+            <th scope="row">Your first name:</th>
+            <td><input type="text" id="inpERDName" maxlength="20"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Email:</th>
+            <td><input type="text" id="inpERDEmail"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Subject:</th>
+            <td><input type="text" id="inpERDSubject"/></td>
+        </tr>
+        <tr>
+            <th scope="row">Tell us about the problem:</th>
+            <td><textarea id="inpERDProblem"></textarea></td>
+        </tr>
+        <tr>
+            <th scope="row">Send diagnostic data:</th>
+            <td><input type="checkbox" id="cbERDSendDiagnostics" checked="checked"/>
+                    <span class="ERSExplain"><span class="xlate">Checking this option sends details about your server and Wordpress configuration along with your support question. It often makes it much easier for us to resolve problems.
+                    We don't collect any personal information - it's just geeky system setup details</span>.<br/>
+                    <a href="#siteDiagnosticsURL#/easyrecipe-diagnostics/" target="_blank"><span class="xlate">Click here to see what gets sent</span></a></span>.
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="tdERSendSupport" style="text-align:center"><input type="button" id="btnERSendSupport" style="width:auto" value="Submit"/>
+                <span id="ERDSending"><img src="#easyrecipeURL#/images/spinner02.gif" width="16" height="16"/>Sending data... please wait</span> <span id="ERDOK">
+                    <p>Your support query has been sent and received.</p>
+                    <p>We'll get back to you as soon as we have an answer.</p>
+                    </span> <span id="ERDFail">
+                    <p>The send failed.</p>
+                    <p>Try again but if you continue to have problems, leave us a message on our <a href="http://www.easyrecipeplugin.com/support.php" target="_blank">support page</a></p>
+                    <p>The error reported was:</p>
+                    <p id="ERDErrors"></p>
+                    </span></td>
+        </tr>
+    </table>
+</div>
+<div id="divERSGeeks">
+    <div id="divERSGeekHeader"><span class="xlate ERSNerd">Nerd Alert!</span><br/>
+        <span class="xlate">You really shouldn't need to change anything here unless you're into Geek</span>.
+    </div>
+    <div class="ers-geeky-box">
+        <label>Force load of a standard jQuery library
+            <input type="checkbox" name="#settingsname#[forcejQuery]" #forcejQueryChecked# />
+        </label>
+        <br>
+        <span class="ERSExplain xlate">This attempts to fix problems caused by badly behaved themes and plugins. <a href="http://www.easyrecipeplugin.com/load_jquery.php" target="_blank">More information...</a></span></div>
+    <div class="ers-geeky-box">
+        <label>Supress HTML editor warning
+            <input type="checkbox" name="#settingsname#[noHTMLWarn]" #noHTMLWarnChecked# />
+        </label>
+        <br>
+        <span class="ERSExplain xlate">Don't display a warning when switching the post editor to "Text" mode</span></div>
+    <div class="ers-geeky-box">
+        <!-- START INCLUDEIF isPlus -->
+        <label>Fix for Genesis grid views (experimental)
+            <input type="checkbox" name="#settingsname#[genesisGrid]" #genesisGridChecked# />
+        </label>
+        <br>
+        <span class="ERSExplain xlate">Fix Genesis based themes when full posts are not displayed on grid views</span>
+        <!-- END INCLUDEIF isPlus -->
+        <!-- START INCLUDEIF !isPlus -->
+        <label>Fix for Genesis grid views (experimental)
+            <input type="checkbox" disabled name="#settingsname#[genesisGrid]" #genesisGridChecked# />
+        </label>
+        <br>
+        <span class="ERSExplain xlate">Fix Genesis based themes when full posts are not displayed on grid views (EasyRecipe Plus only)</span>
+        <!-- END INCLUDEIF !isPlus -->
+    </div>
+    <div id="divERSCustomTemplates">
+        <label><span class="xlate">Custom styles template directory</span><br/>
+                  <span class="ERSExplain xlate">The directory where your custom templates are stored. It MUST NOT be writable by the web server process. <a href="http://www.easyrecipeplugin.com/custom-styles.php" target="_blank">More
+                      information...</a></span><br/>
+            <!-- START INCLUDEIF isPlus -->
+            <input class="ERSTextField" type="text" name="#settingsname#[customTemplates]" value="#customTemplates#"/>
+            <!-- END INCLUDEIF isPlus -->
+            <!-- START INCLUDEIF !isPlus -->
+            <input disabled="disabled" class="ERSTextField" type="text" name="#settingsname#[customTemplates]" value="#customTemplates#"/>
+            <span class="ERSExplain xlate">Custom style templates are available in <a href="http://www.easyrecipeplugin.com/" target="_blank">EasyRecipe Plus</a></span><br/>
+            <!-- END INCLUDEIF !isPlus -->
+        </label>
+    </div>
+    <div id="divERSExtraCSS">
+        <div><span class="xlate">Extra CSS</span><br/>
+            <span class="ERSExplain xlate">Most formatting can be done by using styles and <a href="http://www.easyrecipeplugin.com/support/live-formatting/" target="_blank">Live Formatting</a> but you can add extra display CSS here if needed.</span>
+
+            <div>
+                <textarea name="#settingsname#[extraCSS]">#extraCSS#</textarea>
+            </div>
+        </div>
+    </div>
+    <div id="divERSExtraPrintCSS">
+        <div><span class="xlate">Extra Print CSS</span><br/>
+            <span class="ERSExplain xlate">Most formatting can be done by using styles and <a href="http://www.easyrecipeplugin.com/support/live-formatting/" target="_blank">Live Formatting</a> but you can add extra print CSS here if needed</span>
+        </div>
+        <textarea name="#settingsname#[extraPrintCSS]">#extraPrintCSS#</textarea>
+    </div>
+    <div id="divERSPrintHeader">
+        <div><span class="xlate">Print Page &lt;head&gt; code</span><br/>
+            <span class="ERSExplain xlate">EasyRecipe generates a page for print that has a minimum of &lt;head&gt; code. If you need to add code to the &lt;head&gt; section on each Print Page, add it here</span></div>
+        <textarea name="#settingsname#[extraPrintHeader]">#extraPrintHeader#</textarea>
+    </div>
+</div>
+<div id="divERSSave">
+    <input name="Submit" type="submit" value="Save Settings"/>
+</div>
+</div>
+</form>
+</div>
+#javascript#
+<!-- END PAGE -->
+</div>
+</body>
+</html>
+

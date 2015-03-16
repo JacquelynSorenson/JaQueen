@@ -1,0 +1,117 @@
+#sampleContainer {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.easyrecipe {
+    color: #999;
+}
+
+.easyrecipe .ERSName {
+    color: #900;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.easyrecipe .ERSHead {
+	float: left;
+	margin-right: 20px;
+}
+.easyrecipe .ERSDetails {
+	margin-bottom: 10px;
+}
+
+div.easyrecipe div.ERSSavePrint .ERSPrintBtnSpan .ERSPrintBtn, div.easyrecipe div.ERSSavePrint .ERSSaveBtnSpan .ERSSaveBtn {
+	background:none;
+	border:none;
+	color:#fff;
+	background-color:#900;
+	font-size:11px;
+}
+
+.easyrecipe .ERSHeading {
+    font-weight: bold;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.easyrecipe .ERSIngredients .ingredients .ERSeparator {
+    color: #666;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.easyrecipe .ERSInstructions .instructions .ERSeparator {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.easyrecipe {
+    background: #f0f0f0;
+    font: 13px Arial, Helvetica, sans-serif;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 3px 3px 5px 2px #555;
+}
+
+.easyrecipe .ERSHead.ERSAuthor {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.easyrecipe .nutrition {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.easyrecipe .ERSLinkback {
+    font: 9px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-bottom: 6px;
+    margin-top: 15px;
+}
+
+.easyrecipe .ERSLinkback .ERSWRPLink {
+    color: inherit;
+    text-decoration: none;
+}
+
+.easyrecipe .ERSWRPLink .ERSAttribution {
+    text-decoration: underline;
+}
+.easyrecipe .ERSInstructions .instructions li.instruction {
+    list-style-position: outside;
+    list-style-image: none;
+    list-style-type: none;
+}
+.easyrecipe .ERSIngredients .ERSIngredientsHeader {
+	color: #900;
+}
+.easyrecipe .ERSInstructions .ERSInstructionsHeader {
+	color: #900;
+}
+.easyrecipe .ERSNotesHeader {
+	color: #900;
+}
+.easyrecipe .ERSNutritionHeader {
+	color: #900;
+}
+.easyrecipe .ERSIngredients .ingredients .ingredient {
+    margin-bottom: 4px;
+}
+.easyrecipe .ERSInstructions .instructions li.instruction {
+    margin-bottom: 4px;
+}
+.easyrecipe .ERSSavePrint {
+	float: right;
+}
+.easyrecipe .ERSRatings {
+	margin-left: 10px;
+}
+
